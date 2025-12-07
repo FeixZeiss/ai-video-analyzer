@@ -17,6 +17,80 @@ The tool is simple, modular, and easy to extend. It is ideal for experimenting w
 Using only metadata, the analyzer can generate:
 - Summaries
 
+## API Configuration
+
+To run the AI Video Analyzer, you need two API keys:
+
+1. An **OpenAI API Key** (for ChatGPT-based analysis)
+2. A **YouTube Data API v3 Key** (for fetching video metadata)
+
+Below is a short guide on how to obtain both keys and where to place them in the project.
+
+---
+
+## OpenAI API Key (ChatGPT)
+
+### How to obtain the key
+
+1. Log in to your OpenAI account:  
+   https://platform.openai.com/
+
+2. Go to **User Menu → View API Keys**  
+3. Click **Create new secret key**  
+4. Copy the generated key (it starts with `sk-`)
+
+### Where to store it
+
+Do **NOT** put the key inside the repository.
+
+Instead, set it as an **environment variable**:
+
+```bash
+export OPENAI_API_KEY="your-key-here"
+
+YouTube API Key (YouTube Data API v3)
+How to obtain the key
+
+Go to the Google Cloud Console:
+https://console.cloud.google.com/
+
+Create a new project (or use an existing one)
+
+Open the API Library
+
+Enable YouTube Data API v3
+
+Go to Credentials → Create credentials → API key
+
+Copy the generated key
+
+Where to store it
+
+Set it as an environment variable:
+
+export YOUTUBE_API_KEY="your-key-here"
+
+
+To link it with the YouTube request logic, update the constructor in:
+
+YT/Videogetter.py:
+
+import os
+self.youtube = build(
+    "youtube",
+    "v3",
+    developerKey=os.getenv("YOUTUBE_API_KEY")
+)
+
+Important Note
+
+Do not store API keys or OAuth tokens in the repository.
+Make sure .gitignore includes:
+
+ChatGPT/key.txt
+YT/token/
+.env
+
 ### Local test data support
 Supports reading JSON files such as `videos.json` for offline testing.
 
