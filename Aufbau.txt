@@ -1,0 +1,21 @@
+## Channestorage:
+Datei in der alle Channels die überwacht werden sollen, gespeichert werden 
+    def get_ChannelID(self,channelName): // gibt die ID eines channels zurück
+    
+    def add_Channel_By_Name(self, name):
+
+    def get_Channels(self):
+
+## Videogetter:    class to get information about YT Videos
+    extracts Uploadplaylist IDS of all channels
+    def get_Upload_IDs(self):
+
+    returns all information of all Videos in süpecified Playlists
+    def getInformation(self):
+
+    returns all information of all Videos thatare not in videos.json in süpecified Playlists
+    def getNewInformation(self):
+
+
+
+

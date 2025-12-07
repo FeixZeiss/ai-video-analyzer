@@ -1,0 +1,20 @@
+from CommentGenerator import CommentGenerator
+import json
+
+gen = CommentGenerator()
+commentDict = {}
+
+with open("videos.json", "r", encoding="utf-8") as file:
+    video_information = json.load(file)
+
+for info in video_information:
+    video_title = info['title']
+    statement = info['description']
+
+    comment = gen.generate_comment(video_title, statement)
+    print(info['video_id'])
+    commentDict[info['video_id']] = comment 
+
+with open('comments.json', 'w') as f:
+    json.dump(commentDict, f)
+
