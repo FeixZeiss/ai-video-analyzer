@@ -47,33 +47,34 @@ Instead, set it as an **environment variable**:
 
 ```bash
 export OPENAI_API_KEY="your-key-here"
-
+```
 
 ## YouTube API Key (YouTube Data API v3)
-How to obtain the key
+### How to obtain the key
 
-Go to the Google Cloud Console:
+1. Go to the Google Cloud Console:
 https://console.cloud.google.com/
 
-Create a new project (or use an existing one)
+2. Create a new project (or use an existing one)
 
-Open the API Library
+3. Open the API Library
 
-Enable YouTube Data API v3
+4. Enable YouTube Data API v3
 
-Go to Credentials → Create credentials → API key
+5. Go to Credentials → Create credentials → API key
 
-Copy the generated key
+6. Copy the generated key
 
-Where to store it
+### Where to store it
 
 Set it as an environment variable:
 
+```bash
 export YOUTUBE_API_KEY="your-key-here"
-
+```
 
 To link it with the YouTube request logic, update the constructor in:
-
+```python
 YT/Videogetter.py:
 
 import os
@@ -82,8 +83,8 @@ self.youtube = build(
     "v3",
     developerKey=os.getenv("YOUTUBE_API_KEY")
 )
-
-Important Note
+```
+## Important Note
 
 Do not store API keys or OAuth tokens in the repository.
 Make sure .gitignore includes:
@@ -118,23 +119,24 @@ cd ai-video-analyzer
 
 conda env create -f environment.yml
 conda activate youtube_api
-
+```
 ## Usage
 ### Insert your YouTube API key
 
 Edit YT/Videogetter.py:
 ```Python
 self.youtube = build("youtube", "v3", developerKey=YOUR_API_KEY)
-
+```
 ### Run the example script
-'''bash
+```bash
 python TestVideoloader.py
-
+```
 This fetches metadata, and stores the results locally.
 
 
-##Project Structure#
-"""pgsql
+##Project Structure
+
+```pgsql
 ai-video-analyzer/
 │
 ├── YT/
@@ -149,6 +151,7 @@ ai-video-analyzer/
 ├── videos1.json
 ├── environment.yml
 └── README.md
+```
 
 ## Planned Extensions
 Possible additions:
