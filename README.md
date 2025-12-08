@@ -48,7 +48,8 @@ Instead, set it as an **environment variable**:
 ```bash
 export OPENAI_API_KEY="your-key-here"
 
-YouTube API Key (YouTube Data API v3)
+
+## YouTube API Key (YouTube Data API v3)
 How to obtain the key
 
 Go to the Google Cloud Console:
