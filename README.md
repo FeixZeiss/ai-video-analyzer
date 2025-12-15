@@ -12,7 +12,7 @@ The project is intentionally built with a clean architecture, no hard-coded secr
 - No secrets committed to the repository
 - Professional Python project structure (src/ layout)
 
-##Project Structure
+## Project Structure
 ```pgsql
 ai-video-analyzer/
 │
@@ -41,7 +41,7 @@ ai-video-analyzer/
 ├── README.md
 └── .gitignore
 ```
-##Secrets and Configuration
+## Secrets and Configuration
 All sensitive data is stored outside of src/ in the secrets/ directory.
 ###Required files
 ```pgsql
@@ -50,10 +50,10 @@ secrets/
 ├── client_secret.json   # YouTube OAuth client secret
 └── template.txt         # Prompt rules & style
 ```
-###Important
+### Important
 The secrets/ directory is ignored via .gitignore and must never be committed.#
 
-##Prompt Template (template.txt)
+## Prompt Template (template.txt)
 The template contains only rules, style, and structure — no variables.
 
 ## Installation
@@ -63,7 +63,7 @@ The template contains only rules, style, and structure — no variables.
 git clone https://github.com/FeixZeiss/ai-video-analyzer.git
 cd ai-video-analyzer
 ```
-###2. Run setup script
+### 2. Run setup script
 ```bash
 ./setup.sh
 ```
@@ -71,12 +71,12 @@ This will:
 - create a virtual environment (.venv)
 - install all required dependencies
 
-##3. Activate the environment
+## 3. Activate the environment
 ```bash
 source .venv/bin/activate
 ```
 
-##4. Create secrets dictionary  
+## 4. Create secrets dictionary  
 ```bash
 mkdir secrets
 ```
@@ -85,18 +85,18 @@ Add the following files:
 - client_secret.json
 - template.txt
 
-##Running the Project
-###1. Activate environment
+## Running the Project
+### 1. Activate environment
 ```bash
 conda activate youtube_api
 export PYTHONPATH=src
 export AIVA_SECRETS_DIR=secrets
 ```
-###2. Running the pipeline
+### 2. Running the pipeline
 ```bash
 python scripts/pipeline.py
 ```
-##Cache Behavior
+## Cache Behavior
 - Videos are fetched only once
 - Already known videos are detected via data/cache/videos.json
 - Only new videos are processed again
