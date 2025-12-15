@@ -7,9 +7,10 @@ from ai_video_analyzer.config import (
     get_token_path,
     get_client_secret_path,
     require_file,
+    ensure_parent_dir
 )
 
-from ai_video_analyzer.llm.CommentGenerator import CommentGenerator
+from ai_video_analyzer.llm.SummaryGenerator import CommentGenerator
 from ai_video_analyzer.yt.ChannelStorage import ChannelStorage
 from ai_video_analyzer.yt.Videogetter import Videogetter
 
@@ -56,6 +57,7 @@ def main() -> None:
 
         comment = gen.generate_summary(video_title, statement)
         commentDict[info['video_id']] = comment 
+        print("created comment for video:", info['video_id'])
         
     with open('comments.json', 'w') as f:
         json.dump(commentDict, f)

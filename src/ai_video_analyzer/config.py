@@ -11,7 +11,6 @@ CLIENT_SECRET_FILENAME = "client_secret.json"
 # ---- Project root (optional) ----
 PROJECT_ROOT_ENV = "AIVA_PROJECT_ROOT"
 
-
 def get_project_root() -> Path:
     """
     Returns the project root. For Option 1 (scripts/ + PYTHONPATH),
