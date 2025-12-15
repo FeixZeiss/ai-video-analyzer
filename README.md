@@ -43,7 +43,7 @@ ai-video-analyzer/
 ```
 ## Secrets and Configuration
 All sensitive data is stored outside of src/ in the secrets/ directory.
-###Required files
+### Required files
 ```pgsql
 secrets/
 ├── openai_key.txt        # OpenAI API key
