@@ -86,13 +86,7 @@ Add the following files:
 - template.txt
 
 ## Running the Project
-### 1. Activate environment
-```bash
-conda activate youtube_api
-export PYTHONPATH=src
-export AIVA_SECRETS_DIR=secrets
-```
-### 2. Running the pipeline
+### !. Running the pipeline
 ```bash
 python scripts/pipeline.py
 ```
