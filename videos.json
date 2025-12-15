@@ -1,5 +1,49 @@
 [
   {
+    "video_id": "rEvEXQvo-F8",
+    "title": "OpenAI was dead… Then GPT-5.2 dropped",
+    "published_at": "2025-12-12T22:19:10Z",
+    "description": "Deploying on Railway feels like magic. Get $20 in free credits to try it out - https://railway.com/?referralCode=fireship\n\nSam Altman declared a code red, and OpenAI responded. GPT-5.2 is now at the top of most leaderboards and benchmarks, but is this actually getting us closer to real AGI, or is it just more smoke and mirrors to keep the hype train going?\n\n#Coding #AI #OpenAI #ChatGPT\n\n💬 Chat with Me on Discord\n\nhttps://discord.gg/fireship\n\n🔗 Resources\n- https://openai.com/index/introducing-gpt-5-2/\n\n📚 Chapters\n- Sam Altman’s Code Red Aarm\n- GPT 5.2 Arc Benchmarks\n- OpenAI Disney Deal\n- McDonalds AI Commercial\n\n🔥 Get More Content - Upgrade to PRO\n\nUpgrade at https://fireship.io/pro\nUse code YT25 for 25% off PRO access \n\n🎨 My Editor Settings\n\n- Atom One Dark \n- vscode-icons\n- Fira Code Font\n\n🔖 Topics Covered",
+    "tags": [
+      "webdev",
+      "app development",
+      "lesson",
+      "tutorial",
+      "gpt 5.2",
+      "gpt 5.2 pro",
+      "gpt",
+      "chatgpt",
+      "chatgpt 5.2 review",
+      "gpt 5.2 coding",
+      "sam altman",
+      "sam altman code red",
+      "gpt code red",
+      "gpt pro",
+      "agi",
+      "openai",
+      "openai agi"
+    ]
+  },
+  {
+    "video_id": "QLK9G5zyU-Q",
+    "title": "React.js shell shocked by 10.0 critical vulnerability…",
+    "published_at": "2025-12-09T19:58:38Z",
+    "description": "Try out Genspark’s all-in-one AI workspace for free - https://www.genspark.ai/?utm_source=yt&utm_campaign=fireship\n\nThe JavaScript world just got rocked by a 10.0 critical vulnerability called React2Shell (a.k.a. CVE-2025-55182). Let's find out how this React exploit actually works...\n\n#Coding #programming #javascript #react  \n\n💬 Chat with Me on Discord\n\nhttps://discord.gg/fireship\n\n🔗 Resources\n- https://github.com/facebook/react/security/advisories/GHSA-fv66-9v8q-g76r\n\n🔥 Get More Content - Upgrade to PRO\n\nUpgrade at https://fireship.io/pro\nUse code YT25 for 25% off PRO access \n\n🎨 My Editor Settings\n\n- Atom One Dark \n- vscode-icons\n- Fira Code Font\n\n🔖 Topics Covered\n\n- What is React2Shell?\n- CVE-2025-55182 explained\n- React Flight\n- Which React devs are affected?\n- What should you do?",
+    "tags": [
+      "webdev",
+      "app development",
+      "lesson",
+      "tutorial",
+      "react",
+      "react2shell",
+      "CVE-2025-55182",
+      "react server components",
+      "react flight",
+      "react exploit",
+      "react vulnerability"
+    ]
+  },
+  {
     "video_id": "5JMiNsV7P3Y",
     "title": "Anthropic just bought your favorite JS runtime...",
     "published_at": "2025-12-05T21:43:51Z",
@@ -6256,7 +6300,7 @@
     "video_id": "1xipg02Wu8s",
     "title": "Flutter Basic Training - 12 Minute Bootcamp",
     "published_at": "2021-11-16T15:52:09Z",
-    "description": "Learn the basics of Flutter in 12 minutes. Take a hands-on tour of Flutter's most important building blocks to start building apps for iOS, Android, the web, and desktop.  https://fireship.io/courses/flutter-firebase/basic-training/\n\n🔥 Get The FULL FlutterFire Course - Upgrade to PRO\n💰 30% off (expires 11/23) with code: ibTd664q\n\n#flutter #dev #learntocode\n\n🔗 Resources\n\nFull Course: https://fireship.io/courses/flutter-firebase/\nFlutter Docs https://flutter.dev/\nHire Rolly Peres for Flutter Dev https://github.com/narcodico or rolly@narcodic.com\n\n📚 Chapters\n\n00:00 Flutter Basic Training\n00:56 Get Started\n02:36 Stateless Widget\n03:20 Material App\n03:58 Container\n05:07 Flex Layout\n06:07 Stack\n07:00 Scaffold Magic\n07:27 Debugger\n07:47 ListView\n08:09 Builder\n08:25 Stateful Widget\n09:32 Advanced State Management\n10:03 Navigator\n10:51 Hero\n\n\n🎨 My Editor Settings\n\n- Atom One Dark \n- vscode-icons\n- Fira Code Font\n\n🔖 Topics Covered\n\n- Flutter Tutorial for Beginners\n- Flutter Flex Layout\n- Stateless vs Stateful Widgets\n- Navigation in Flutter\n- Flutter for Mobile Dev on iOS and Android",
+    "description": "Learn the basics of Flutter in 12 minutes. Take a hands-on tour of Flutter's most important building blocks to start building apps for iOS, Android, the web, and desktop.  https://fireship.io/courses/flutter-firebase/basic-training/\n\n🔥 Get The FULL FlutterFire Course - Upgrade to PRO\n💰 30% off (expires 11/23) with code: ibTd664q\n\n#flutter #dev #learntocode\n\n🔗 Resources\n\nFull Course: https://fireship.io/courses/flutter-firebase/\nFlutter Docs https://flutter.dev/\nHire Rolly Peres for Flutter Dev https://github.com/x1z7 or rolly@illennium.com\n\n📚 Chapters\n\n00:00 Flutter Basic Training\n00:56 Get Started\n02:36 Stateless Widget\n03:20 Material App\n03:58 Container\n05:07 Flex Layout\n06:07 Stack\n07:00 Scaffold Magic\n07:27 Debugger\n07:47 ListView\n08:09 Builder\n08:25 Stateful Widget\n09:32 Advanced State Management\n10:03 Navigator\n10:51 Hero\n\n\n🎨 My Editor Settings\n\n- Atom One Dark \n- vscode-icons\n- Fira Code Font\n\n🔖 Topics Covered\n\n- Flutter Tutorial for Beginners\n- Flutter Flex Layout\n- Stateless vs Stateful Widgets\n- Navigation in Flutter\n- Flutter for Mobile Dev on iOS and Android",
     "tags": [
       "webdev",
       "app development",
