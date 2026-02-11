@@ -36,32 +36,49 @@ class CommentGenerator:
         video_title: str,
         description: str = "",
         tags: Optional[List[str]] = None,
-        ) -> str:
-            """
-            Generates a structured, neutral German summary.
-            """
-            tags_str = ", ".join(tags) if tags else "Keine"
+        output_format: str = "paragraph",
+    ) -> str:
+        """
+        Generates a structured, neutral German summary.
+        """
+        tags_str = ", ".join(tags) if tags else "Keine"
 
-            user_prompt = f"""
-            Video-Titel:
-            {video_title}
+        format_overrides = {
+            "paragraph": "",
+            "sections": (
+                "Ausgabeformat (ueberschreibt nur die Form):\n"
+                "Liefere exakt drei Zeilen:\n"
+                "Thema: <ein Satz>\n"
+                "Kernpunkte: <zwei bis vier kurze Saetze>\n"
+                "Fazit: <ein kurzer Satz>\n"
+                "Keine Aufzaehlungszeichen."
+            ),
+        }
+        if output_format not in format_overrides:
+            raise ValueError(f"Unsupported output_format: {output_format}")
 
-            Beschreibung:
-            {description or "Keine Beschreibung vorhanden."}
+        user_prompt = f"""
+        Video-Titel:
+        {video_title}
 
-            Tags:
-            {tags_str}
+        Beschreibung:
+        {description or "Keine Beschreibung vorhanden."}
 
-            Aufgabe:
-            Fasse den Inhalt des Videos gemäß den oben beschriebenen Regeln zusammen.
-            """.strip()
+        Tags:
+        {tags_str}
 
-            response = self.client.responses.create(
-                model=self.model,
-                input=[
-                    {"role": "developer", "content": self.template},
-                    {"role": "user", "content": user_prompt},
-                ],
-            )
+        Aufgabe:
+        Fasse den Inhalt des Videos gemaess den oben beschriebenen Regeln zusammen.
+        """.strip()
 
-            return (response.output_text or "").strip()
+        input_messages = [{"role": "developer", "content": self.template}]
+        if format_overrides[output_format]:
+            input_messages.append({"role": "developer", "content": format_overrides[output_format]})
+        input_messages.append({"role": "user", "content": user_prompt})
+
+        response = self.client.responses.create(
+            model=self.model,
+            input=input_messages,
+        )
+
+        return (response.output_text or "").strip()

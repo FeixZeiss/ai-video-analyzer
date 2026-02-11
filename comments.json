@@ -1,0 +1,32 @@
+{
+  "Ukt2gVz25PQ": {
+    "title": "10 open source tools that feel illegal...",
+    "published_at": "2026-02-05T16:47:38Z",
+    "summary": "Thema: Grundlagen des Ethical Hackings mit 10 Open‑Source‑Tools auf Kali Linux.\nKernpunkte: Der Creator demonstriert die Grundlagen des Penetrationstests auf Kali Linux mit 10 freien Open‑Source‑Tools, u. a. Nmap, Wireshark, Metasploit, Aircrack‑ng, Hashcat, Skipfish, SQLMap, hping3 und SET. Gezeigt werden typische Einsatzzwecke wie Aufklärung, Schwachstellenscans, Exploits, Passwort‑Cracking und Netzwerk‑Traffic‑Analyse. Es wird klar betont, dass der Einsatz nur mit ausdrücklicher Erlaubnis erfolgen darf und sonst illegal sein kann. Links zu Ressourcen und weiterem Lernmaterial sind enthalten.\nFazit: Nutze diese Tools ausschließlich verantwortungsvoll und mit Zustimmung."
+  },
+  "ssYt09bCgUY": {
+    "title": "The wild rise of OpenClaw...",
+    "published_at": "2026-01-30T15:56:36Z",
+    "summary": "Thema: Aufstieg und Einrichtung von OpenClaw, dem offenen KI‑Assistenten, mit Vergleich und Live‑Demo.\nKernpunkte: Erklärt, was OpenClaw (fka Moltbot/ClawdBot) ist, wie es Aufgaben automatisiert und sich von Chatbots wie Claude unterscheidet. Zeigt Schritt‑für‑Schritt‑Setup samt 1‑Klick‑Deployment auf Hostinger und eine Telegram‑Automations‑Demo. Stellt kurz Peter Steinberger vor und verweist auf Website/Repo; enthält gesponserte Hinweise zu Traycer und Hostinger.\nFazit: Ein gehyptes OSS‑Projekt, das praxisnah demonstriert wird und schnell startklar ist."
+  },
+  "M4TufsFlv_o": {
+    "title": "Bun in 100 Seconds",
+    "published_at": "2026-01-22T19:14:29Z",
+    "summary": "Thema: Turbo-schneller JavaScript-Runtime „Bun“ als moderne Alternative zu Node.js in 100 Sekunden.\nKernpunkte: Kurz zur Geschichte der JS-Runtimes (Node → Deno → Bun) und warum Performance und DX wichtig sind. Was ist Bun: eine All-in-one-Runtime mit blitzschnellem Installer, Bundler, Test-Runner und Transpiler, gebaut in Zig auf WebKit’s JavaScriptCore. Demo mit bun run/install, ESM/TS/JSX‑Support und weitgehender Node‑API‑Kompatibilität.\nFazit: Bun bündelt Werkzeuge und Tempo für spürbar schnellere JavaScript-Entwicklung und -Ausführung."
+  },
+  "9uW6B9LPntY": {
+    "title": "A brief history of programming...",
+    "published_at": "2026-01-20T17:58:16Z",
+    "summary": "Thema: Ein schneller Überblick über die Geschichte der Programmierung von der Turing‑Maschine bis zu modernem JavaScript.\nKernpunkte: Von Binärlogik und Assembler (Turing, Buchholz, Booth) zu höheren Abstraktionen und Paradigmen (McCarthy/Lisp, Dijkstra). C und Unix (Ritchie, Thompson) legten die Basis für C++ (Stroustrup), Java (Gosling), Python (van Rossum), C#/TypeScript (Hejlsberg) und JavaScript (Eich).\nFazit: Programmieren entwickelte sich von maschinennaher Arbeit zu vielseitigen Hochsprachen und großen Ökosystemen."
+  },
+  "MFsYaRnrcPQ": {
+    "title": ".NET in 100 Seconds",
+    "published_at": "2026-01-16T17:03:35Z",
+    "summary": "Thema: Schnelleinführung in .NET – Geschichte, Kernkonzepte, Ökosystem und Einsatzmöglichkeiten.\nKernpunkte: .NET ist frei, Open Source, plattformübergreifend und setzt primär auf C#. Entwicklung vom .NET Framework über .NET Core zum vereinheitlichten .NET 5+. Ökosystem mit CLR, BCL, NuGet sowie ASP.NET, Blazor, MAUI, Unity und starkem Tooling (Visual Studio, VS Code, CLI). Geeignet für Web, APIs, Desktop, Mobile, Cloud, Games und IoT; kurze Demo mit dotnet new/run.\nFazit: .NET ist ein modernes, performantes und vielseitiges Fundament für nahezu jede Art von Software."
+  },
+  "EKOU3JWDNLI": {
+    "title": "The unhinged world of tech in 2026...",
+    "published_at": "2026-01-14T19:01:19Z",
+    "summary": "Thema: Zehn Tech-Trends 2026 für Entwickler – vom Jobmarkt über KI und Robotik bis zu Quantencomputing und JavaScript.\nKernpunkte: Das Video skizziert zehn Trends, die 2026 den Entwickleralltag prägen. Dazu zählen Jobmarktveränderungen und eine mögliche KI-Blase sowie Robotik, Wearable-AI, AR/VR, Chip-Dominanz, neue Kernkraft und Fortschritte im Quantencomputing. Gleichzeitig nehmen digitale Überwachung und ID-Systeme zu, während sich das JavaScript-Ökosystem weiterentwickelt.\nFazit: 2026 vereint enorme Chancen mit neuen Risiken – Vorbereitung und Fokus auf relevante Skills sind entscheidend."
+  }
+}

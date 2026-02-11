@@ -90,10 +90,36 @@ Add the following files:
 ```bash
 python scripts/pipeline.py
 ```
+
+Examples:
+```bash
+# Default channel (Fireship), all videos
+PYTHONPATH=src AIVA_SECRETS_DIR=secrets python scripts/pipeline.py
+
+# Custom channel
+PYTHONPATH=src AIVA_SECRETS_DIR=secrets python scripts/pipeline.py --channel "MrBeast"
+
+# Only videos since a fixed date, max 10 videos
+PYTHONPATH=src AIVA_SECRETS_DIR=secrets python scripts/pipeline.py --channel "Fireship" --since-date 2025-01-01 --max-videos 10
+
+# Only newly discovered videos from cache perspective
+PYTHONPATH=src AIVA_SECRETS_DIR=secrets python scripts/pipeline.py --channel "Fireship" --new-only
+
+# Structured summary format
+PYTHONPATH=src AIVA_SECRETS_DIR=secrets python scripts/pipeline.py --summary-format sections
+```
+
+CLI options:
+- `--channel "<name>"` (can be passed multiple times)
+- `--since-date YYYY-MM-DD`
+- `--max-videos <n>`
+- `--new-only`
+- `--summary-format paragraph|sections`
+
 ## Cache Behavior
-- Videos are fetched only once
-- Already known videos are detected via data/cache/videos.json
-- Only new videos are processed again
+- Cache file: `data/cache/videos.json`
+- Default mode fetches all videos and refreshes the cache.
+- `--new-only` fetches only videos not yet in cache and appends them.
 This results in:
    - fewer API calls
    - faster re-runs
@@ -109,6 +135,7 @@ This results in:
 ### AI-powered analysis
 Using only metadata, the analyzer can generate:
 - Summaries
+- Output file: `Summaries.json` (with readable line breaks in each summary)
 
 ## API Configuration
 
